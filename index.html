@@ -1,0 +1,132 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="card-container">
+                <div class="header">
+                    <span class="moral">7+</span>
+                    <span class="name">Shrewd Shooter</span>
+                    <span class="health">1</span>
+                </div>
+                <div class="body">
+                    <div class="stats-container">
+                        <div class="stats">
+                            <div class="title">Move</div>
+                            <div class="value">5"</div>
+                        </div>
+                        <div class="stats">
+                            <div class="title">Hit</div>
+                            <div class="value">5+</div>
+                        </div>
+                        <div class="stats">
+                            <div class="title">Defense</div>
+                            <div class="value">5+</div>
+                        </div>
+                    </div>
+                    <div class="separator abilities">Abilitites</div>
+                    <div class="abilities-container">
+                        <div class="ability-container">
+                            <span class="ability-name">Blind Sharpshooter</span>
+                            <div class="ability-description">If this unit targets an enemy with a ranged attack within 12", gain +1 to Hit</div>
+                            <span class="close">X</span>
+                        </div>
+                        
+                    </div>
+                    <div class="separator equipments">Equipments</div>
+                </div>
+                <div class="footer">
+                    <div class="equipments-container">
+                        <div class="box">
+                            <div class="title"></div>
+                            <div class="dots-container">
+                                <span class="dots checked"></span>
+                                <span class="dots checked"></span>
+                                <span class="dots"></span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="title"></div>
+                            <div class="dots-container">
+                                <span class="dots checked"></span>
+                                <span class="dots"></span>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="title"></div>
+                            <div class="dots-container">
+                                <span class="dots checked"></span>
+                                <span class="dots"></span>
+                            </div>
+                        </div>
+                        <div class="points"></div>
+                    </div>
+                    <div class="keywords-container">
+                        <span class="keyword-title">Keywords: </span>
+                        <span>undead - vanguard</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="input-container">
+                <label for="name">
+                    Name of the card
+                    <input type="text" id="name">
+                </label>
+                <label for="moral">
+                    Moral value
+                    <input type="number" min="1" id="moral">
+                </label>
+                <label for="health">
+                    Health value
+                    <input type="number" min="1" id="health">
+                </label>
+                <label for="move">
+                    Move value
+                    <input type="number" min="1" id="move">
+                </label>
+                <label for="hit">
+                    Hit value
+                    <input type="number" min="1" id="hit">
+                </label>
+                <label for="defense">
+                    Defense value
+                    <input type="number" min="1" id="defense">
+                </label>
+
+                <label for="abilities-checkbox">
+                    Does this unit have abilities
+                    <input type="checkbox" name="abilities-checkbox" id="abilities-checkbox">
+                </label>
+
+                <div class="abilities-container-input">
+                    <!-- <div class="ability-box"> -->
+                        <label>
+                            Ability name
+                            <input type="text" id="ability-name">
+                        </label>
+                        <label>
+                            Ability description
+                            <input type="text" id="ability-description">
+                        </label>
+                        <label for="add-ability">
+                            Add ability ?
+                            <button id="add-ability">Add</button>
+                        </label>
+                    <!-- </div> -->
+                </div>
+
+                
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

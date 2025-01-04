@@ -1,0 +1,29 @@
+{
+  "name": "generateur-de-cartes",
+  "version": "1.0.0",
+  "description": "card generator for rinad",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "nodemon start ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davio-viator/wargame-card-generator.git"
+  },
+  "keywords": [
+    "js",
+    "card",
+    "solo"
+  ],
+  "author": "davio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davio-viator/wargame-card-generator/issues"
+  },
+  "homepage": "https://github.com/davio-viator/wargame-card-generator#readme",
+  "dependencies": {
+    "express": "^4.21.2",
+    "nodemon": "^3.1.9"
+  }
+}

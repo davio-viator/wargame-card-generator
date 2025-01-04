@@ -1,0 +1,258 @@
+.container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.left {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background-color: blue;
+}
+
+.right {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background-color: yellow;
+}
+
+.card-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 52vh;
+    aspect-ratio: 1.4/2.1;
+    /* background-color: rgb(224, 224, 212); */
+    background-color: white;
+    border-radius: 1.375rem;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: red;
+    height: 80%;
+    width: 80%;
+    padding: 5px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-top: 8px;
+}
+
+.moral {
+    border: 2px solid black;
+    border-radius: 50px 50px 0 0;
+    padding: 5px 3px;
+    height: 2.8vh;
+    aspect-ratio: 1/1;
+    text-align: center;
+    background-image: url(assets/images/flag.png);
+    background-image: url(assets/images/dark\ flag.png);
+    background-size: 90%;
+    /* background-size: contain; */
+    background-repeat: no-repeat;
+    background-position: 2px 5px;
+    color: white;
+}
+
+.health {
+    border: 2px solid black;
+    border-radius: 50px 50px 0 0;
+    padding: 5px 3px;
+    height: 2.8vh;
+    aspect-ratio: 1/1;
+    text-align: center;
+    background-image: url(assets/images/hearth.webp);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: 1px 5px;
+    color: white;
+}
+
+.name {
+    border-radius: 50px;
+    padding: 5px 2px;
+    border: 2px solid black;
+    width: 60%;
+    text-align: center;
+    background-color: beige;
+}
+
+
+
+.stats-container {
+    margin-top: 2px;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0.8rem;
+    display: flex;
+    flex-direction: row;
+    border: 2px solid black;
+    justify-content: space-around;
+    width: 75%;
+    background-color: beige;
+
+}
+
+.stats .title {
+    text-align: center;
+}
+
+.value {
+    font-size: 20px;
+    text-align: center;
+    border: 2px solid black;
+    background-color: white;
+    height: 3vh;
+    aspect-ratio: 2/1;
+}
+
+.separator {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 2.2vh;
+    border: 2px solid black;
+    border-radius: 50px;    
+    padding: 0px 3px;
+    text-align: center;
+    font-weight: bold;
+    background-color: white;
+}
+
+.abilities {
+    position: relative;
+    top: 1px;
+}
+
+.equipments {
+    font-size: 12px;
+    margin-top: -19px;
+    position: relative;
+    top: 2%;
+}
+
+.abilities-container {
+    background-color: beige;
+    border: 2px solid black;
+    width: 80%;
+    padding: 0 5px;
+    padding-top: 15px;
+    margin-top: -15px;
+    margin-left: auto;
+    margin-right: auto;
+    aspect-ratio: 1.11/1;
+    border-radius: 0.8rem;
+    max-height: 208px;
+    text-overflow: auto;
+}
+
+.ability-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1px;
+    position: relative;
+}
+
+.ability-name {
+    border: 2px solid black;
+    border-radius: 50px;
+    margin-left: -3px;
+    padding: 0px 5px;
+    width: fit-content;
+    font-weight: bold;
+    font-size: 12px;
+    background-color: white;
+    z-index: 5;
+    text-transform: capitalize;
+}
+
+.ability-description {
+    border: 2px solid black;
+    background-color: white;
+    margin-top: -5px;
+    border-radius: 8px;
+    padding: 3px 5px;
+    width: fit-content;
+    font-size: 12px;
+}
+
+
+.close {
+    opacity: 0;
+    width: fit-content;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    top: 0px;
+    height: 20px;
+    aspect-ratio: 1/1;
+}
+
+.close:hover {
+    opacity: 1;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+    background-color: red;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    background-position: 5% 35%;
+    border-radius: 50%;
+   
+   
+}
+
+.equipments-container {
+    background-color: beige;
+    border: 2px solid black;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    aspect-ratio: 5/1;
+    border-radius: 5px 5px 15px 15px;
+}
+
+.keywords-container {
+    background-color: white;
+    margin-top: 3px;
+    border: 2px solid black;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px 5px 15px 15px;
+    font-size: 12px;
+}
+
+.keyword-title {
+    font-size: 13px; 
+    padding-left: 5px;
+    font-weight: bold;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.abilities-container-input {
+    display: none;
+    flex-direction: column;
+    padding: 5px;
+    min-height: 50px;
+    min-width: 50px;
+    background-color: purple;
+}
